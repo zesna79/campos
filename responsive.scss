@@ -1,0 +1,296 @@
+/* ========== sass ========== */
+@mixin bg-title{
+	font-size: 60px !important;
+	line-height: 50px !important;
+}
+@mixin md-title{
+	font-size: 37px !important;
+	line-height: 33px !important;
+}
+
+
+@media only screen and (max-width: 630px) {
+	/* ========== For mobile: ========== */
+
+	/* banner */
+	.banner{
+		background-size: 730px 400px !important;
+		background-position: 50% 0% !important;
+		padding: 70px 7% !important;
+		height: 400px;
+	}
+	.banner h1{
+		@include bg-title();
+	}
+	.banner button{
+		border-radius: 5px !important;
+		padding: 10px 20px !important;
+		font-size: 16px !important;
+		transition: all 0.3s linear !important;
+	}
+
+	/* first-sip */
+	.first-sip{
+		padding: 65px 15px !important;
+	}
+	.first-sip h1{
+		@include md-title();
+	}
+	.first-sip p{
+		width: 100% !important;
+	}
+	
+	/* product */
+	.product{
+		margin-top: 50px !important;
+	}
+	.product-text{
+		padding: 0 3% !important;
+		line-height: 33px !important;
+	}
+	.product h1{
+		@include md-title();
+	}
+	.products{
+		padding: 50px 3% !important;
+	}
+
+	/* find-cafe */
+	.find-cafe{
+		margin: 50px auto !important;
+	}
+	.location{
+		max-width: 1000px;
+		max-height: 600px !important;
+		flex-direction: column-reverse;
+	}
+	.location .text{
+		padding: 30px !important;
+		width: 100% !important;
+	}
+	.location h1{
+		@include md-title();
+		margin-bottom: 20px;
+	}
+	.location a{
+		font-size: 20px !important;
+	}
+	.location .image{
+		width: 100% !important;
+	}
+
+	/* learn-more */
+	.content{
+		align-items: center !important;
+		flex-direction: column;
+	}
+	.content h1{
+		@include md-title();
+		height: 60px !important;
+	}
+	.content1 , .content2{
+		width: 96% !important;
+		margin: 0 0 50px 0 !important;
+		height: auto !important;
+	}
+
+	/* brew-guides */
+	.brew-guides{
+		margin: 0px auto 100px !important; 
+	}
+	.guide{
+		min-width: 96% !important;
+	}
+	.brew-guides p{
+		font-size: 20px !important;
+	}
+	.brew-guides h1{
+		@include md-title();
+		margin: 15px auto 40px !important;
+	}
+	.guide h3{
+		font-size: 20px !important;
+		line-height: 18px !important;
+		width: 90% !important;
+	}
+
+	/* equipment */
+	.equipment-content{
+		padding: 0 3% !important;
+	}
+	.equipment h1{
+		@include md-title();
+		width: 100% !important;
+	}
+	.equipment-coffee{
+		padding: 50px 3% !important;
+	}
+
+	/* apply */
+	.apply{
+		margin: 50px auto !important;
+	}
+	.apply-now{
+		max-width: 1000px;
+		max-height: 600px !important;
+		flex-direction: column-reverse;
+	}
+	.apply-now .text{
+		padding: 30px !important;
+		width: 100% !important;
+	}
+	.apply-now h1{
+		@include md-title();
+		margin-bottom: 20px;
+	}
+	.apply-now a{
+		font-size: 20px !important;
+	}
+	.apply-now .image{
+		width: 100% !important;
+	}
+
+	/* footer */
+	.box1 h1{
+		@include bg-title();
+	}
+	.box5 h2{
+		font-size: 22px !important;
+		line-height: 20px !important;
+	}
+	.box5 form button{
+		font-size: 16px !important;
+		height: 45px !important;
+	}
+	.box6{
+		flex-direction: column-reverse;
+	}
+	.box6 .text-right{
+		display: block !important;
+		padding: 0 0 40px;
+		margin-left: -15px;
+	}
+
+	/* stick-bottom */
+	.stick-bottom{
+		padding: 7px 0 !important;
+	}
+	.stick-bottom i{
+		right: 10px !important;
+	}
+}
+  
+@media only screen and (max-width: 992px) {
+	/* ========== For tablet: ========== */
+
+	/* navigation */
+	navbar{
+		justify-content: space-between !important;
+	}
+	.menu{
+		width: 100px;
+		height: 50px !important;
+	}
+	.menu ul{
+		visibility: hidden;
+	}
+	.menu ul{
+		visibility: hidden;
+	}
+	.hamberger-icon{
+		display: block !important;
+		font-size: 20px;
+		margin: auto 20px;
+	}
+	.hamberger-icon input{
+		display: none;
+	}
+	.contact #hide{
+		display: none;
+	}
+
+	/* banner */
+	.banner{
+		margin-top: 50px !important;
+	}
+
+	/* product */
+	.products i{
+		display: none;
+	}
+
+	/* find-cafe */
+	.location{
+		margin: 0 2% !important;
+	}
+
+	/* learn-more */
+	.learn-more{
+		margin: 50px auto !important;
+	}
+	.content{
+		width: 100% !important;
+	}
+
+	/* brew-guides */
+	.guides{
+		flex-wrap: wrap;
+	}
+	.guide{
+		margin: 15px 15px !important;
+		width: 45% !important;
+	}
+
+	/* equipment */
+	.equipment-coffee i{
+		display: none;
+	}
+
+	/* aplly */
+	.apply{
+		margin: 70px auto !important;
+	}
+	.apply-now{
+		margin: 0 2% !important;
+	}
+
+	/* footer */
+	.footer{
+		padding: 30px 3%  50px !important;
+		flex-direction: column;
+	}
+	.box1 , .box2 , .box3 , .box4 , .box5{
+		width: 100% !important;
+	}
+	.box1 h1{
+		margin: 30px 0 50px;
+	}
+	.footer h4{
+		margin: 10px 0;
+	}
+	.footer h4 i{
+		display: inline !important;
+		float: right;
+		margin: auto 10px;
+	}
+	.footer ul{
+		display: none;
+	}
+	.box5 img{
+		width: 43% !important;
+		margin-top: 50px !important;
+	}
+	.box6{
+		margin: 20px 0;
+		width: 100% !important;
+	}
+	.box6 .text-right{
+		display: flex;
+	}
+	.box6 p{
+		margin-left: 0 !important;
+	} 
+	.box6 .text-right p{
+		margin-left: 15px !important;
+	}
+}
